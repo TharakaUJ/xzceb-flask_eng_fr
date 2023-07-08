@@ -1,4 +1,4 @@
- from deep_translator import MyMemoryTranslator
+from deep_translator import MyMemoryTranslator
  
 
 def englishToFrench(englishText):
