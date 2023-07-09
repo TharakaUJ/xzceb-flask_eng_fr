@@ -1,18 +1,27 @@
+'''THis is the module for translating english to french and french to english
+'''
+
 from deep_translator import MyMemoryTranslator
- 
-
-def englishToFrench(englishText):
-    '''
-    docstring for this function
-    '''
-
-    frenchText = MyMemoryTranslator(source='en', target='fr').translate(text=englishText)
-    return frenchText
 
 
-def frenchToEnglish(frenchText):
+def english_to_french(english_text):
+
     '''
-    docstring forthe function
+    convert english to french
+    >>>english_to_french('Hello')
+    >>>'Bonjour'
     '''
-    englishText = MyMemoryTranslator(source='fr', target='en').translate(text=englishText)
-    return englishText
+
+    french_text = MyMemoryTranslator(source='english', target='french').translate(text=english_text)
+    return french_text
+
+
+def french_to_english(french_text):
+
+    '''
+    convert english to french
+    >>>english_to_french('Bonjour')
+    >>>'Hello'
+    '''
+    english_text = MyMemoryTranslator(source='french', target='english').translate(text=french_text)
+    return english_text
